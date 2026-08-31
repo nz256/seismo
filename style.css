@@ -1,0 +1,58 @@
+/* style.css */
+body {
+    max-width: 70%; /* Ширина вашего документа */
+    margin: 40px auto; /* Центрирование */
+    padding: 0 20px;   /* Отступы по бокам */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%; /* Картинки не будут вылезать за пределы */
+    height: auto;
+}
+
+/* Скрываем заголовки только для таблиц внутри блока с классом no-header */
+.no-header thead {
+    display: none;
+}
+
+/* Дополнительно: уберем лишние отступы, если нужно */
+.no-header table {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse; /* Убирает двойные линии */
+    width: 100%;
+    font-weight: bold;
+	table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #000;    /* Рисует черную линию толщиной 1px */
+    padding: 8px;              /* Добавляет отступы внутри ячеек */
+    text-align: left;
+}
+
+th {
+    background-color: #92f2f2; /* Выделяет заголовок серым цветом */
+}
+
+/* Подсветка строки при наведении */
+table tr:hover {
+    background-color: #e0e0ff; /* Светло-серый фон */
+    transition: background-color 0.3s;
+}
+/* Чередование строк */
+table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Ячейка с классом "attention" */
+.attention {
+	 /* Розовый фон background-color: #ffcccc !important; */
+    color: #cc0000;                       /* Красный текст */
+    font-weight: bold;
+}
